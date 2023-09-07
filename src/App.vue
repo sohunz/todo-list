@@ -4,9 +4,7 @@
       <h3>TODO LIST</h3>
       <div class="input mt-4 mb-5">
         <input type="text" class="form-control" v-model="newTodo" />
-        <button type="button" class="btn btn-success" @click="addTodo" id="btn-add">
-          Add
-        </button>
+        <button type="button" class="btn btn-success" @click="addTodo" id="btn-add">Add</button>
       </div>
       <div class="lists">
         <button @click="deleteAll"  class="btn btn-danger mb-2 delete-all" v-if="this.todos.length > 0">Delete All</button>
@@ -34,11 +32,7 @@ export default {
   methods: {
     addTodo() {
       if (this.newTodo.trim() !== '') {
-        this.todos.push(
-          { 
-            text: this.newTodo 
-          }
-          );
+        this.todos.push({text: this.newTodo});
         this.newTodo = '';
         this.saveToLocalStorage();
       }
