@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid mt-5">
-    <div class="wrapper-todo m-auto p-5 rounded-2">
+    <div class="wrapper-todo m-auto py-5 px-3 rounded-2">
       <h3>TODO LIST</h3>
       <div class="input mt-4 mb-5">
         <input type="text" class="form-control" v-model="newTodo" />
